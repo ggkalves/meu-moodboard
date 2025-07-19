@@ -1,0 +1,79 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+  background-color: #ffe6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.container {
+  background: #fff0f6;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  border: 3px dashed #ff99cc;
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff66a3;
+}
+
+/* Botões de emoji */
+.emoji-selector button {
+  font-size: 28px;
+  margin: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffe0ec;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.emoji-selector button:hover {
+  transform: scale(1.2);
+  background-color: #ffc2d8;
+}
+
+/* Mensagem */
+.mensagem {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #c71585;
+  min-height: 40px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: glitter 4s linear infinite;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+@keyframes glitter {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moodzinho do Dia ✨</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Moodzinho do Dia ✨</h1>
+    
+    <div class="emoji-selector">
+      <button data-mood="feliz">🥰</button>
+      <button data-mood="triste">😢</button>
+      <button data-mood="bravo">😠</button>
+      <button data-mood="soninho">😴</button>
+      <button data-mood="cool">😎</button>
+    </div>
+
+    <div class="mensagem" id="mensagem"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <audio id="musiquinha" autoplay loop>
+  <source src="cat-music-376396.mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio :(
+</audio>
+
+</body>
+</html>
